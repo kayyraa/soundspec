@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="scripts/style/style.css">
+        <script type="module" src="scripts/global.d.js"></script>
+        <script type="module" src="scripts/simulation.js"></script>
+
+        <title>soundspec alpha</title>
+    </head>
+    <body>
+        <div blur class="Dashboard">
+            <header>soundspec alpha</header>
+            <span class="sFrame">Framerate: 0</span>
+            <span class="sParts">Parts: 0</span>
+            <hr>
+            <div>
+                <div>
+                    <span>MICROPHONE</span>
+                    <span class="mFreq">Frequency: 0.0μMHz</span>
+                    <span class="mVolume">Volume: 0.0dB</span>
+                </div>
+                <div>
+                    <span>SOURCE</span>
+                    <span class="ForceLabel">Impulse Force: 0</span>
+                    <span class="SpanButton ImpulseModeLabel">Impulse: <span style="color: rgb(89, 89, 255); font-weight: 600;">PUSH</span>
+                </div>
+                <div>
+                    <span>MEDIA</span>
+                    <input class="MediaInput" type="file" accept="audio/*">
+                    <div>
+                        <span class="SpanButton Play">Play</span>
+                        <span class="SpanButton Stop">Stop</span>
+                        <span class="SpanButton Reconnect">Reconnect</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas class="Canvas"></canvas>
+        <div style="opacity: 0;" class="Hint"></div>
+    </body>
+</html>
